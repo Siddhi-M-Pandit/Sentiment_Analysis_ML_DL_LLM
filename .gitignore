@@ -172,3 +172,14 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Results (optional: ignore if large)
+results/*.csv
+results/*.log
+results/*.json
+
+# Model Files (optional: ignore if large)
+models/*.h5
+models/*.pt
+models/*.pkl
+models/*.joblib
