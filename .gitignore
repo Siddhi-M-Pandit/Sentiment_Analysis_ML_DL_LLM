@@ -183,3 +183,9 @@ models/*.h5
 models/*.pt
 models/*.pkl
 models/*.joblib
+
+# datasets
+data/
+
+# Weights & Biases logs
+wandb/
