@@ -189,3 +189,8 @@ data/
 
 # Weights & Biases logs
 wandb/
+
+# logs in nb
+notebooks/logs
+
+libdevice.10.bc
