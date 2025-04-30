@@ -1,0 +1,7 @@
+{
+    "python.pythonPath": "~/.conda/envs/sentimentAnalysisENV/bin/python",
+    "python.analysis.extraPaths": [
+      "~/.conda/envs/sentimentAnalysisENV/lib/python3.10/site-packages"
+    ]
+  }
+  
