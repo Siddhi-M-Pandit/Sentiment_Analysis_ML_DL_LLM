@@ -5,9 +5,9 @@ metric:
   goal: maximize
 parameters:
   model_type:
-    values: ["CNN"]       #, "BiLSTM"
+    values: ["BiLSTM"]       #, "CNN"
   embedding_dim:
-    values: [128, 256]
+    values: [64, 128]        # for CNN [128, 256]
   dropout:
     values: [0.2, 0.5]
   dense_units:
@@ -15,14 +15,14 @@ parameters:
   learning_rate:
     values: [0.001, 0.0005]
   batch_size:
-    values: [64, 128, 256]
+    values: [128]
   epochs:
     value: 5
-  num_filters:
-    values: [64, 128, 256]
-  kernel_size:
+  num_filters:                # only used in the CNN branch
+    values: [64, 128]
+  kernel_size:                # only used in the CNN branch
     values: [3, 5]
-  lstm_units:
+  lstm_units:                  # only used in the BiLSTM branch
     values: [64, 128]
   optimizer:
     values: ["adam", "rmsprop"]
