@@ -1,11 +1,9 @@
 #!/bin/bash
 
-#export CUDA_VISIBLE_DEVICES="" 
-
 # ----------- Configuration ----------- #
 # Number of agents to run
 NUM_AGENTS=1
-# My Sweep ID
+# Sweep ID
 SWEEP_ID="smpandit-/sentiment-analysis/03joa3ol"          #CNN: 'op2fzrj4', # BiLSTM: '03joa3ol'
 # Total no. of runs for each agent
 NO_RUNS=1

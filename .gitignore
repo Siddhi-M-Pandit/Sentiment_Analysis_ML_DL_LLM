@@ -77,6 +77,12 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+notebooks/.ipynb_checkpoints/
+notebooks/tmp/
+notebooks/tmp_overfit*/
+notebooks/roberta-splits
+notebooks/wandb_bert_pt
+notebooks/wandb_roberta1_pt
 
 # IPython
 profile_default/

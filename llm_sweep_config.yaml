@@ -1,0 +1,28 @@
+entity: smpandit-
+project: sentiment-analysis
+
+
+program: scripts/llm_sweep_train.py
+method: bayes
+metric:
+  name: val_accuracy
+  goal: maximize
+parameters:
+  model_type:
+    values: ["roBERTa"]            # roBERTa
+  learning_rate:
+    values: [5e-5, 3e-5]
+  batch_size:
+    values: [8, 16, 32, 64]
+  epochs:
+    values: [2, 3, 5]
+  dropout:
+    values: [0.1, 0.3]
+  weight_decay:
+    values: [0.01]
+  warmup_ratio: 
+    values: [0.1]
+  optimizer:
+    values: ["adam", "rmsprop"]
+
+# prajjwal1/bert-tiny, "sshleifer/tiny-distilroberta-base"

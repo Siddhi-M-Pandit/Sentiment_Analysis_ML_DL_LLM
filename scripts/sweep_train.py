@@ -73,17 +73,6 @@ def sweep_train():
 
     tuning_time = time.time() - start_tuning
 
-    # Store tuning_time to csv file to reuse for total tuning_time later
-    csv_path = os.path.join(os.getcwd(), "tuning_times.csv")
-    file_exists = os.path.isfile(csv_path)
-
-    with open(csv_path, "a", newline="") as csvfile:
-        writer = csv.writer(csvfile)
-        if not file_exists:
-            # write header on first run
-            writer.writerow(["run_id", "tuning_time"])
-        writer.writerow([run.id, tuning_time])
-
     # Training
     start_train = time.time()
 
